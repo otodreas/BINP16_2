@@ -161,11 +161,15 @@ for i in range(len(seq)):
             print(f'incomplete codon read at position {i}')
             
 #%% 3.1.13
-# print the first n primes, only check factors below x*.5
+# print the first n primes, only check factors below 0.5x
 
-# import libraries, get number of primes and speed up call from from user
+# import libraries, set start time
 import math
+import time
 
+start_time = time.time()
+
+# get number of primes and speed up call from from user
 # ensure input is a positive integer
 try:
     n_primes_max = abs(int(input('how many successive primes would you like to compute? ')))
@@ -238,3 +242,6 @@ while len(primes) < n_primes_max:
 # print speed-up message
 if speed_up:
     print('non-primes are not printed to save compute time')
+    
+# print compute time message
+print(f'total program runtime: {round(time.time()-start_time, 1)} seconds')
