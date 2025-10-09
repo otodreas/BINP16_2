@@ -180,28 +180,61 @@ except ValueError:
     
 # create blank list to store primes
 primes = []
-x = 1
 
-# loop through 
+# set `x` to store the number being computed
+
+x = 1
+# initiate `even` at False since we are starting at 1 
+even = False
+
+# compute primes until the number of primes computed matches the user's input
 while len(primes) < n_primes_max:
+    
+    # increase `x` by 1 for each iteration of the while loop
+    # 1 is not a prime number
     x = x + 1
+    
+    # create blank list to store factors of x in
     factors = []
-    for i in range(1, math.ceil(x/2) + 1):
-        if x%i == 0:
-            factors.append(i)
-        elif speed_up:
-            if len(factors) > 1:
+    
+    # flip between even and odd for every increase in `x`
+    even = not even
+    
+    # loop through all the possible factors of `x`
+    # even numbers are not prime, therefore odd numbers determine how large the
+    # range of the for loop needs to be
+    # an odd number x cannot be evenly divided by any integer > 0.5x
+    for i in range(1, math.ceil(x/2)):
+        
+        # check if `speed_up` is true and break the loop as early as possible
+        if speed_up:
+            if even:
                 break
+            else:
+                if len(factors) > 1:
+                    break
         else:
             pass
         
+        # if the loop hasn't been broken, check if i is a factor of x
+        # and add i to the list of factors for x
+        if x%i == 0:
+            factors.append(i)
+        else:
+            pass
+        
+    # if the entire range of possible factors has been checked and 1 is the
+    # only factor, append `x` to `primes` and print data
     if len(factors) == 1:
         primes.append(x)
         print(f'{x} is prime numer {len(primes)}')
+        
+    # print non-prime factors
     elif speed_up == False:
         print(f'{x} is divisible by {factors}')
     else:
         pass
 
+# print speed-up message
 if speed_up:
     print('non-primes are not printed to save compute time')
