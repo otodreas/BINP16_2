@@ -121,3 +121,6 @@ elif score > 0:
 
 else:
     print(f'{strokes} strokes on hole {hole}: {score} below par')
+    
+##% 3.1.12 (skipped 3.1.11)
+# find the position of tyrosine codons in a sequence
