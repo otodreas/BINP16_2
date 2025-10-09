@@ -3,6 +3,11 @@
 #Press F9 to run a single line
 #Press CTRL+ETNER to run the whole code
 
+import os
+os.getcwd()
+# change to local
+os.chdir('/home/inf-33-2025/Desktop/Courses/BINP16_2/Lecture4')
+
 #%% Reading input from the user
 print(input('What is your name? ')) 
 
@@ -79,17 +84,20 @@ for line in lines:
 r = open('bim.txt')
 pos_vec = []
 header = r.readline() #don't need the header
+print(header)
 
 for line in r:
     #line = r.readline()
     data = line.split()
     print(data);
     
-    chr, SNP, temp, pos, a1, a2 = data
-    pos_vec.append(pos)
-
+    chromo, SNP, temp, pos, a1, a2 = data
+    pos_vec.append(int(pos))
+    
 print('The file contains #', len(pos_vec), ' rows')
 print('The file positions are: ', pos_vec)
+
+r.close()
 
 #%% Reading FASTA files
 
