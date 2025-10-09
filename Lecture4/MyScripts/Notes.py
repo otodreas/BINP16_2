@@ -13,5 +13,3 @@ os.getcwd()
 # change to local
 os.chdir('/home/inf-33-2025/Desktop/Courses/BINP16_2/Lecture4')
 
-#%%
-
