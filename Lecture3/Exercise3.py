@@ -4,6 +4,15 @@ Spyder Editor
 """
 
 #%%
+# VENV TEST
+import sys
+
+if hasattr(sys, 'real_prefix') or (hasattr(sys, 'base_prefix') and sys.base_prefix != sys.prefix):
+    print("Inside venv")
+else:
+    print("Not in venv")
+
+#%%
 """
 Section 3.1
 """
@@ -122,5 +131,77 @@ elif score > 0:
 else:
     print(f'{strokes} strokes on hole {hole}: {score} below par')
     
-##% 3.1.12 (skipped 3.1.11)
+#%% 3.1.12 (skipped 3.1.11)
 # find the position of tyrosine codons in a sequence
+
+# assign seq and amino acids
+seq = 'UAUAAACGAUACCAUUACUAUGACCAUGGG'
+tyr = ['UAU', 'UAC']
+
+# get reading frame shift input from user and ensure it is an integer
+try:
+    reading_frame_shift = int(input('input reading frame shift: '))
+´except ValueError:
+    print('reading frame shift must be a number. no reading frame shift applied')
+
+# shift reading frame
+if 0 < reading_frame_shift < 3:
+    seq = seq[reading_frame_shift: ]
+
+# loop through the length of seq, pringing each codon and its identity if it
+# is tyrosine
+for i in range(len(seq)):
+    if i%3 == 0:
+        codon = seq[i: i + 3]
+        if codon in tyr:
+            print(i, codon, 'tyrosine')
+        else:
+            print(i, codon)
+        if len(codon) < 3:
+            print(f'incomplete codon read at position {i}')
+            
+#%% 3.1.13
+# print the first n primes, only check factors below x*.5
+
+# import libraries, get number of primes and speed up call from from user
+import math
+
+# ensure input is a positive integer
+try:
+    n_primes_max = abs(int(input('how many successive primes would you like to compute? ')))
+except ValueError:
+    print('error: you must input a number')
+
+# ensure `speed_up` input is an integer
+try:
+    speed_up = int(input('would you like to speed up by not computing factors of non-primes? (0 or 1) '))
+except ValueError:
+    print('error: you must input a number')
+    
+# create blank list to store primes
+primes = []
+x = 1
+
+# loop through 
+while len(primes) < n_primes_max:
+    x = x + 1
+    factors = []
+    for i in range(1, math.ceil(x/2) + 1):
+        if x%i == 0:
+            factors.append(i)
+        elif speed_up:
+            if len(factors) > 1:
+                break
+        else:
+            pass
+        
+    if len(factors) == 1:
+        primes.append(x)
+        print(f'{x} is prime numer {len(primes)}')
+    elif speed_up == False:
+        print(f'{x} is divisible by {factors}')
+    else:
+        pass
+
+if speed_up:
+    print('non-primes are not printed to save compute time')
