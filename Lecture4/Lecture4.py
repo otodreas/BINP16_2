@@ -243,7 +243,7 @@ sequence = 'AGCGACGATCGCTAGATCGCTAGGAGCGACGATCGCTAG' \
             'AGATCGCTAGGAGCGACGATCGCTAGATCGCTAGG'
 
 fileObj = open('FASTA_write.txt', 'w')
-fileObj.write('> %s\n' %comment)
+fileObj.write('> %s\n' %comment) # this will be negative if another program has the file
 
 #Read char-by-char from sequence
 for (n, code) in enumerate(sequence):
@@ -251,6 +251,7 @@ for (n, code) in enumerate(sequence):
     
     #IF this is the first char (we are after the header) or the 60's
     if n>0 and n%60==0:
+        print('\n')
         fileObj.write('\n')
     
     #write the char to the file
