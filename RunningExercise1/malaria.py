@@ -15,12 +15,15 @@ the 4 arguments above, in order.
 Written by Oliver Todreas for RunningExerciseI in the course BINP16.
 """
 
-
-# Import libraries.
+# -----------------------------------------------------------------------------
+# 1. Import libraries.
+# -----------------------------------------------------------------------------
 import sys
 import os
 
-# Save command line inputs to variables.
+# -----------------------------------------------------------------------------
+# 2. Save command line inputs to variables and check for errors.
+# -----------------------------------------------------------------------------
 try:
     script_name, fasta_file, blast_file, output_path = sys.argv[0:5]
 
@@ -31,6 +34,7 @@ except ValueError:
              'Please pass a FASTA file, a tab-delimited BLAST file, and '
              'output path after the script name.\n')
 
+    
 # Check that fasta_file is a FASTA file. '.txt' files are not accepted.
 fasta_exts = ('.fasta', '.fas', '.fa', '.fna', '.ffn', '.faa', '.mpfa', '.frn')
 if not fasta_file.endswith(fasta_exts):
@@ -75,6 +79,9 @@ if '\t' not in header:
     sys.exit('\nError: BLAST data file is not tab delimited.\n')
     
 
+# -----------------------------------------------------------------------------
+# 3. Run data operations.
+# -----------------------------------------------------------------------------
 
 # Create the empty lists IDs_fasta, headers_fasta, and seqs_fasta to store data
 # from the file fasta_file passed to the program.
@@ -109,6 +116,10 @@ with open(fasta_file, 'r') as fasta:
         else:
             seqs_fasta.append(l)
 
+# Check that the number of headers is equal to the number of sequences. Every
+# header in a FASTA file, identified by starting with '>', is associated with a
+# one line sequence. Therefore, if the condition below is not met, an error
+# will be thrown and the program terminated.
 if len(headers_fasta) != len(seqs_fasta):
     sys.exit('\nError: FASTA file corrupted. Unequal number of headers and '
              'sequences found.\n')
@@ -162,7 +173,11 @@ for i, row in enumerate(data_blast):
     if 'null' not in desc_blast:
         custom_strings_dict[ID_blast] = (f'protein={desc_blast}\n')
 
-        
+
+# -----------------------------------------------------------------------------
+# 4. Write output and conclude program.
+# -----------------------------------------------------------------------------
+
 # Open output_path provided by the user and write the output.
 with open(output_path, 'w') as output:
     
