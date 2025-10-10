@@ -82,13 +82,26 @@ with open(fasta_file, 'r') as fasta:
 
 
 
+null_IDs_blast_set = set()
+null_IDs_blast = []
+
+for k in custom_strings_dict.keys():
+    if 'null' in custom_strings_dict[k]:
+        null_IDs_blast_set.add(k)
+        null_IDs_blast.append(k)
+
+
+
+
 if (len(IDs_fasta) == len(headers_fasta) == len(seqs_fasta) == len(custom_strings_dict)) != 1:
     print('data length error')
 
-
+IDs_fasta_set = set(IDs_fasta)
     
+
 
 with open(output_path, 'w') as output:
     for i, header_fasta in enumerate(headers_fasta):
-        output.write(header_fasta + custom_strings_dict[IDs_fasta[i]] + '\n')
-        output.write(seqs_fasta[i] + '\n')
+        if IDs_fasta[i] not in null_IDs_blast:
+            output.write(header_fasta + custom_strings_dict[IDs_fasta[i]] + '\n')
+            output.write(seqs_fasta[i] + '\n')
