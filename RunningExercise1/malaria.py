@@ -28,6 +28,8 @@ IDs_fasta = []
 headers_fasta = []
 seqs_fasta = []
 
+fasta_dict = {}
+
 # Open the fasta file using with to ensure that it is closed after completion.
 with open(fasta_file, 'r') as fasta:
     
@@ -43,17 +45,24 @@ with open(fasta_file, 'r') as fasta:
         # headers_fasta, replacing the final '\n' with '\t', since more data
         # will be added to the header in the output.
         if l.startswith('>'):
-            headers_fasta.append(l.replace('\n', '\t'))
+            header = l.replace('\n', '\t')
+            headers_fasta.append(header)
             
             # Split the characters in string l into a list, appending the
             # characters of the first item follwing the leading '>' to the list
             # IDs_fasta.
-            IDs_fasta.append(l.split()[0][1:])
+            ID = l.split()[0][1:]
+            IDs_fasta.append(ID)
+        
+            
             
         # If the string l does not start with '>' it is a sequence. Append the
         # string to the list seqs_fasta.
         else:
-            seqs_fasta.append(l)
+            seq = l
+            seqs_fasta.append(seq)
+            
+        fasta_dict[header] = seq
 
 
 # Create the empty list data_blast. This list will store all the data from 
@@ -96,10 +105,10 @@ for i, row in enumerate(data_blast):
     
     # Assign the protein ID and its description to variables ID_blast and
     # desc_blast and add them to the dictionary custom_strings_dict.
-    # if 'null' not in data_blast[i][desc_blast_col]:
-    ID_blast = data_blast[i][ID_blast_col]
-    desc_blast = data_blast[i][desc_blast_col]
-    custom_strings_dict[ID_blast] = (f'protein={desc_blast}\n')
+    if 'null' not in data_blast[i][desc_blast_col]:
+        ID_blast = data_blast[i][ID_blast_col]
+        desc_blast = data_blast[i][desc_blast_col]
+        custom_strings_dict[ID_blast] = (f'protein={desc_blast}\n')
         
 
 
@@ -150,8 +159,7 @@ IDs_fasta_set = set(IDs_fasta)
 
 
 with open(output_path, 'w') as output:
-    for i, header_fasta in enumerate(headers_fasta):
-        if IDs_fasta[i] not in null_IDs_blast:
-            output.write(header_fasta
-                         + custom_strings_dict[IDs_fasta[i]])
-            output.write(seqs_fasta[i])
+    for i, key in enumerate(custom_strings_dict.keys()):
+        output.write(fasta_dict[key].split()[0][1:]
+                     + custom_strings_dict[key] + fasta_dict[key])
+        output.write(seqs_fasta[i])
