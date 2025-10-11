@@ -34,8 +34,8 @@ try:
 # passed to the script.
 except ValueError:
     sys.exit('\nError: too few or too many arguments passed. Please pass a '
-             'FASTA file, a tab-\ndelimited BLAST file, and output path after '
-             'the script name.\n')
+             'FASTA file, a tab-\ndelimited BLAST data file, and output path '
+             'after the script name.\n')
 
 # Check that fasta_file is a FASTA file. '.txt' files are not accepted.
 fasta_exts = ('.fasta', '.fas', '.fa', '.fna', '.ffn', '.faa', '.mpfa', '.frn')
@@ -47,7 +47,7 @@ if not fasta_file.endswith(fasta_exts):
 if not output_path.endswith(('.txt')):
     sys.exit('\nError: output file must be of type .txt\n')
 
-# Check that the FASTA and BLAST files exist. Create empty list
+# Check that the FASTA and BLAST data files exist. Create empty list
 # non_existent_files to store non existent filepaths in.
 non_existent_files = []
 
@@ -76,13 +76,13 @@ if len(non_existent_files) > 0:
 # save compute, since every line needs to be tab delimited for the program to
 # work. If the file is tab delimited, the header will be used later.
 with open(blast_file, 'r') as blast:
-    blast_header_str = blast.readline()
+    blast_header = blast.readline()
 
-if '\t' not in blast_header_str:
+if '\t' not in blast_header:
     sys.exit('\nError: BLAST data file is not tab delimited.\n')
 
 else:
-    blast_header = blast_header_str.split('\t')
+    blast_colnames = blast_header.split('\t')
     
 # Save the indecies of the columns used for generation of the output file.
 # Check that they are represented in the BLAST data file before running the
@@ -92,8 +92,8 @@ ID_colname = '#queryName'
 desc_colname = 'hitDescription'
 
 try:
-    ID_blast_col = blast_header.index(ID_colname)
-    desc_blast_col = blast_header.index(desc_colname)
+    ID_blast_col = blast_colnames.index(ID_colname)
+    desc_blast_col = blast_colnames.index(desc_colname)
 
 except ValueError:
     sys.exit('\nError: BLAST data file does not contain appropriate column '
@@ -111,32 +111,37 @@ IDs_fasta = []
 headers_fasta = []
 seqs_fasta = []
 
-# Open the fasta file using with to ensure that it is closed after completion.
+# Open the FASTA file using with to ensure that it is closed after completion.
 with open(fasta_file, 'r') as fasta:
     
-    # Read the lines of the fasta file into the list lines_fasta. Fasta file
-    # headers are read as strings where data entries are separated by '\t'.
-    lines_fasta = fasta.readlines()
-    
-    # Loop through the strings in the list lines_fasta, appending them to the
-    # appropriate list.
-    for l in lines_fasta:
+    # Read lines one at a time for memory efficiency. The while loop ensures
+    # that each line of the file is read into the variable line.
+    while True:
+        line = fasta.readline()
         
-        # Headers start with the charater '>'. Append the header to the list
-        # headers_fasta, replacing the final '\n' with '\t', since more data
-        # will be added to the header in the output.
-        if l.startswith('>'):
-            headers_fasta.append(l.replace('\n', '\t'))
-            
-            # Split the characters in string l into a list, appending the
-            # characters of the first item follwing the leading '>' to the list
-            # IDs_fasta.
-            IDs_fasta.append(l.split()[0][1:])
-            
-        # If the string l does not start with '>' it is a sequence. Append the
-        # string to the list seqs_fasta.
+        # Check that there is a line in the file for the current iteration of
+        # the loop.
+        if line:
+        
+            # Headers start with the charater '>'. Append the header to the
+            # list headers_fasta, replacing the final '\n' with '\t', since
+            # more data will be added to the header in the output.
+            if line.startswith('>'):
+                headers_fasta.append(line.replace('\n', '\t'))
+                
+                # Split the characters in string line into a list, appending
+                # the characters of the first item follwing the leading '>' to
+                # the list IDs_fasta.
+                IDs_fasta.append(line.split()[0][1:])
+                
+            # If the string line does not start with '>' it is a sequence.
+            # Append the string to the list seqs_fasta.
+            else:
+                seqs_fasta.append(line)
+                
+        # Break the while loop when the end of the FASTA file is reached.
         else:
-            seqs_fasta.append(l)
+            break
 
 # Check that the number of headers is equal to the number of sequences. Every
 # header in a FASTA file, identified by starting with '>', is associated with a
@@ -150,36 +155,46 @@ if len(headers_fasta) != len(seqs_fasta):
 # blast_file in a list, where every line is a list nested within data_blast.
 data_blast = []
 
-# Open the blast file using with to ensure that it is closed after completion.
+# Open the BLAST data file using with to ensure that it is closed after
+# completion.
 with open(blast_file, 'r') as blast:
     
-    # Read the lines of the blast file into the list lines_blast. Each line of
-    # the blast file is read as a string where data entries are separated by
-    # '\t', making each line of the file blast_file one item in the list lines.
-    lines_blast = blast.readlines()[1:]
-    
-    # Loop through the strings in the list lines_blast, making each string into
-    # a list, splitting them by the delimiter '\t'.
-    for i, l in enumerate(lines_blast):
+    # Read the lines of the BLAST data file one at a time to save memory. Skip
+    # the first line since it was already read in the error handling section of
+    # the program.
+    next(blast)
+    while True:
+        row = blast.readline()
+        if row:
         
-        # Split data into lists delimiting by '\t' and append them to
-        # data_blast.
-        data_blast.append(l.split('\t'))
+            # Split data into lists delimiting by '\t' and assign the list to 
+            # the variable row_split.
+            row_split = row.split('\t')
+            
+            # Check if the current row has a null value in the protein
+            # description column using the column index. Append the row to the
+            # list data_blast only if it does not.
+            if 'null' not in row_split[desc_blast_col]:
+                data_blast.append(row_split)
+        
+        # Break the while loop when there are no more rows to be read.
+        else:
+            break
+
 
 # Create an empty dictionary to store protein IDs and their corresponding
 # descriptions based on the contents of blast_file
 custom_strings_dict = {}
 
-# Loop through the nested lists inside the list data_blast.
+# Loop through the nested lists inside the list data_blast to access each BLAST
+# hit iteratively.
 for i, row in enumerate(data_blast):
     
     # Assign the protein ID and its description to variables ID_blast and
-    # desc_blast and add them to the dictionary custom_strings_dict only if
-    # desc_blast does not contain 'null'.
+    # desc_blast and add them to the dictionary custom_strings_dict.
     ID_blast = data_blast[i][ID_blast_col]
     desc_blast = data_blast[i][desc_blast_col]
-    if 'null' not in desc_blast:
-        custom_strings_dict[ID_blast] = (f'protein={desc_blast}\n')
+    custom_strings_dict[ID_blast] = (f'protein={desc_blast}\n')
 
 
 # -----------------------------------------------------------------------------
@@ -189,7 +204,7 @@ for i, row in enumerate(data_blast):
 # Open output_path provided by the user and write the output.
 with open(output_path, 'w') as output:
     
-    # Loop through the list of fasta headers to write the output.
+    # Loop through the list of FASTA headers to write the output.
     for i, header_fasta in enumerate(headers_fasta):
         
         # Check if the current ID is in the list of keys in the dictionary
