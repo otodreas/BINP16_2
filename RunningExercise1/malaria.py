@@ -21,20 +21,22 @@ Written by Oliver Todreas for RunningExerciseI in the course BINP16.
 import sys
 import os
 
+
 # -----------------------------------------------------------------------------
-# 2. Save command line inputs to variables and check for errors.
+# 2. Save command line inputs to variables and check for initial errors.
 # -----------------------------------------------------------------------------
+
+# Assign user inputs to variables.
 try:
-    script_name, fasta_file, blast_file, output_path = sys.argv[0:5]
+    fasta_file, blast_file, output_path = sys.argv[1:5]
 
 # Exit the program and throw an error if more or fewer than 4 arguments are
 # passed to the script.
 except ValueError:
-    sys.exit('\nError: too few or too many arguments passed.\n'
-             'Please pass a FASTA file, a tab-delimited BLAST file, and '
-             'output path after the script name.\n')
+    sys.exit('\nError: too few or too many arguments passed. Please pass a '
+             'FASTA file, a tab-\ndelimited BLAST file, and output path after '
+             'the script name.\n')
 
-    
 # Check that fasta_file is a FASTA file. '.txt' files are not accepted.
 fasta_exts = ('.fasta', '.fas', '.fa', '.fna', '.ffn', '.faa', '.mpfa', '.frn')
 if not fasta_file.endswith(fasta_exts):
@@ -60,6 +62,7 @@ for file in [fasta_file, blast_file]:
 if len(non_existent_files) > 0:
     if len(non_existent_files) == 1:
         print('\nError: the following file does not exist:')
+        
     else:
         print('\nError: the following files do not exist:')
         
@@ -71,12 +74,31 @@ if len(non_existent_files) > 0:
 
 # Ensure that the BLAST data file is tab delimited. Read only the first line to
 # save compute, since every line needs to be tab delimited for the program to
-# work.
+# work. If the file is tab delimited, the header will be used later.
 with open(blast_file, 'r') as blast:
-    header = blast.readline()
+    blast_header_str = blast.readline()
 
-if '\t' not in header:
+if '\t' not in blast_header_str:
     sys.exit('\nError: BLAST data file is not tab delimited.\n')
+
+else:
+    blast_header = blast_header_str.split('\t')
+    
+# Save the indecies of the columns used for generation of the output file.
+# Check that they are represented in the BLAST data file before running the
+# program logic. If they are represented, save their indecies for later
+# operations.
+ID_colname = '#queryName'
+desc_colname = 'hitDescription'
+
+try:
+    ID_blast_col = blast_header.index(ID_colname)
+    desc_blast_col = blast_header.index(desc_colname)
+
+except ValueError:
+    sys.exit('\nError: BLAST data file does not contain appropriate column '
+             'names. The protein\nID column must be named `#queryName` and '
+             'the description column must be named\n`hitDescription`.\n')
     
 
 # -----------------------------------------------------------------------------
@@ -134,29 +156,15 @@ with open(blast_file, 'r') as blast:
     # Read the lines of the blast file into the list lines_blast. Each line of
     # the blast file is read as a string where data entries are separated by
     # '\t', making each line of the file blast_file one item in the list lines.
-    lines_blast = blast.readlines()
+    lines_blast = blast.readlines()[1:]
     
     # Loop through the strings in the list lines_blast, making each string into
     # a list, splitting them by the delimiter '\t'.
     for i, l in enumerate(lines_blast):
         
-        # The first line of the file blast_file is the header. Assign this line
-        # to its own list blast_header.
-        if i == 0:
-            blast_header = l.split('\t')
-        
-        # For all other strings of data in lines, split them into lists and
-        # append them to data_blast.
-        else:
-            data_blast.append(l.split('\t'))
-
-# Save the indecies of the columns used for generation of the output file.
-ID_colname = '#queryName'
-desc_colname = 'hitDescription'
-
-ID_blast_col = blast_header.index(ID_colname)
-desc_blast_col = blast_header.index(desc_colname)
-
+        # Split data into lists delimiting by '\t' and append them to
+        # data_blast.
+        data_blast.append(l.split('\t'))
 
 # Create an empty dictionary to store protein IDs and their corresponding
 # descriptions based on the contents of blast_file
@@ -195,4 +203,4 @@ with open(output_path, 'w') as output:
                          + seqs_fasta[i])
 
 # Print completion message.
-print(f'Output written to {output_path}')
+print(f'\nOutput written to {output_path}\n')
