@@ -105,6 +105,8 @@ except ValueError:
 # 3. Run data operations.
 # -----------------------------------------------------------------------------
 
+# 3.1. Read FASTA file
+
 # Create the empty lists IDs_fasta, headers_fasta, and seqs_fasta to store data
 # from the file fasta_file passed to the program.
 IDs_fasta = []
@@ -151,6 +153,9 @@ if len(headers_fasta) != len(seqs_fasta):
     sys.exit('\nError: FASTA file corrupted. Unequal number of headers and '
              'sequences found.\n')
 
+
+# 3.2. Read BLAST data file
+
 # Create the empty list data_blast. This list will store all the data from 
 # blast_file in a list, where every line is a list nested within data_blast.
 data_blast = []
@@ -182,6 +187,8 @@ with open(blast_file, 'r') as blast:
             break
 
 
+# 3.3. Write novel strings to be added to the output file.
+
 # Create an empty dictionary to store protein IDs and their corresponding
 # descriptions based on the contents of blast_file
 custom_strings_dict = {}
@@ -198,7 +205,7 @@ for i, row in enumerate(data_blast):
 
 
 # -----------------------------------------------------------------------------
-# 4. Write output and conclude program.
+# 4. Construct output file and conclude program.
 # -----------------------------------------------------------------------------
 
 # Open output_path provided by the user and write the output.
