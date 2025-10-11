@@ -187,7 +187,7 @@ with open(blast_file, 'r') as blast:
             break
 
 
-# 3.3. Write novel strings to be added to the output file.
+# 3.3. Write novel strings that will be added to the output file.
 
 # Create an empty dictionary to store protein IDs and their corresponding
 # descriptions based on the contents of blast_file
