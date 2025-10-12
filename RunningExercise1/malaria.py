@@ -70,6 +70,7 @@ if len(non_existent_files) > 0:
     for i, file in enumerate(non_existent_files):
         if i < len(non_existent_files) - 1:
             print(file)
+            
         else:
             sys.exit(file)
 
