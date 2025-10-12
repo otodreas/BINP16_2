@@ -23,7 +23,7 @@ import os
 
 
 # -----------------------------------------------------------------------------
-# 2. Save command line inputs to variables and check for initial errors.
+# 2. Save command line inputs to variables and handle initial errors.
 # -----------------------------------------------------------------------------
 
 # Assign user inputs to variables.
@@ -33,22 +33,21 @@ try:
 # Exit the program and throw an error if more or fewer than 4 arguments are
 # passed to the script.
 except ValueError:
-    sys.exit('\nError: too few or too many arguments passed. Please pass a '
+    sys.exit('Error: too few or too many arguments passed. Please pass a '
              'FASTA file, a tab-\ndelimited BLAST data file, and output path '
-             'after the script name.\n')
+             'after the script name.')
 
 # Check that fasta_file is a FASTA file. '.txt' files are not accepted.
 fasta_exts = ('.fasta', '.fas', '.fa', '.fna', '.ffn', '.faa', '.mpfa', '.frn')
 if not fasta_file.endswith(fasta_exts):
-    sys.exit('\nError: a non-FASTA file has been passed to the program.\n')
+    sys.exit('Error: a non-FASTA file has been passed to the program.')
         
-
 # Check that output_path is a text file.
 if not output_path.endswith(('.txt')):
-    sys.exit('\nError: output file must be of type .txt\n')
+    sys.exit('Error: output file must be of type .txt')
 
 # Check that the FASTA and BLAST data files exist. Create empty list
-# non_existent_files to store non existent filepaths in.
+# non_existent_files to store non existent file paths in.
 non_existent_files = []
 
 # Loop through file paths passed to the program, checking if they exist and
@@ -57,20 +56,22 @@ for file in [fasta_file, blast_file]:
     if not os.path.exists(file):
         non_existent_files.append(file)
 
-# Print the non existent file paths if there are any and interrupt the program,
-# controlling for grammar.
+# Print the non existent file path message, adjusted for the number of
+# non-existent files, if needed.
 if len(non_existent_files) > 0:
     if len(non_existent_files) == 1:
-        print('\nError: the following file does not exist:')
+        print('Error: the following file does not exist:')
         
     else:
-        print('\nError: the following files do not exist:')
+        print('Error: the following files do not exist:')
         
+    # Print the non-existent file path(s) and exit the program after the last
+    # missing file path is printed.
     for i, file in enumerate(non_existent_files):
         if i < len(non_existent_files) - 1:
             print(file)
         else:
-            sys.exit(file + '\n')
+            sys.exit(file)
 
 # Ensure that the BLAST data file is tab delimited. Read only the first line to
 # save compute, since every line needs to be tab delimited for the program to
@@ -79,7 +80,7 @@ with open(blast_file, 'r') as blast:
     blast_header = blast.readline()
 
 if '\t' not in blast_header:
-    sys.exit('\nError: BLAST data file is not tab delimited.\n')
+    sys.exit('Error: BLAST data file is not tab delimited.')
 
 else:
     blast_colnames = blast_header.split('\t')
@@ -96,16 +97,16 @@ try:
     desc_blast_col = blast_colnames.index(desc_colname)
 
 except ValueError:
-    sys.exit('\nError: BLAST data file does not contain appropriate column '
+    sys.exit('Error: BLAST data file does not contain appropriate column '
              'names. The protein\nID column must be named `#queryName` and '
-             'the description column must be named\n`hitDescription`.\n')
+             'the description column must be named\n`hitDescription`.')
     
 
 # -----------------------------------------------------------------------------
 # 3. Run data operations.
 # -----------------------------------------------------------------------------
 
-# 3.1. Read FASTA file
+# 3.1. Read the FASTA file.
 
 # Create the empty lists IDs_fasta, headers_fasta, and seqs_fasta to store data
 # from the file fasta_file passed to the program.
@@ -150,11 +151,11 @@ with open(fasta_file, 'r') as fasta:
 # one line sequence. Therefore, if the condition below is not met, an error
 # will be thrown and the program terminated.
 if len(headers_fasta) != len(seqs_fasta):
-    sys.exit('\nError: FASTA file corrupted. Unequal number of headers and '
-             'sequences found.\n')
+    sys.exit('Error: FASTA file corrupted. Unequal number of headers and '
+             'sequences found.')
 
 
-# 3.2. Read BLAST data file
+# 3.2. Read the BLAST data file.
 
 # Create the empty list data_blast. This list will store all the data from 
 # blast_file in a list, where every line is a list nested within data_blast.
@@ -165,8 +166,7 @@ data_blast = []
 with open(blast_file, 'r') as blast:
     
     # Read the lines of the BLAST data file one at a time to save memory. Skip
-    # the first line since it was already read in the error handling section of
-    # the program.
+    # the first line since it was already read in section 2.
     next(blast)
     while True:
         row = blast.readline()
@@ -187,14 +187,15 @@ with open(blast_file, 'r') as blast:
             break
 
 
-# 3.3. Write novel strings that will be added to the output file.
+# 3.3. Create a dictionary to store protein IDs and their corresponding strings
+# that will be added to the output file.
 
 # Create an empty dictionary to store protein IDs and their corresponding
 # descriptions based on the contents of blast_file
 custom_strings_dict = {}
 
 # Loop through the nested lists inside the list data_blast to access each BLAST
-# hit iteratively.
+# hit iteratively by row.
 for i, row in enumerate(data_blast):
     
     # Assign the protein ID and its description to variables ID_blast and
@@ -211,7 +212,8 @@ for i, row in enumerate(data_blast):
 # Open output_path provided by the user and write the output.
 with open(output_path, 'w') as output:
     
-    # Loop through the list of FASTA headers to write the output.
+    # Loop through the list of FASTA headers to which the custom strings will
+    # be added to write the output.
     for i, header_fasta in enumerate(headers_fasta):
         
         # Check if the current ID is in the list of keys in the dictionary
@@ -225,4 +227,4 @@ with open(output_path, 'w') as output:
                          + seqs_fasta[i])
 
 # Print completion message.
-print(f'\nOutput written to {output_path}\n')
+print(f'Output written to {output_path}')
