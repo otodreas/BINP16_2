@@ -102,6 +102,8 @@ with (open(fasta_file, 'r') as fasta,
     blast_dict = {}
     fasta_dict = {}
     
+    seq = ''
+    
     # skip blast header
     next(blast)
     
@@ -112,8 +114,6 @@ with (open(fasta_file, 'r') as fasta,
         
             # read blast row
             row = blast.readline().split('\t')
-            
-            
             
             # check if description is null
             if row[desc_blast_col] != 'null': # might need to use 'null' not in ...
@@ -126,45 +126,25 @@ with (open(fasta_file, 'r') as fasta,
                 blast_dict[id_blast] = desc_string
             
         
-                header = fasta.readline().replace('\n', '\t')
+                header = fasta.readline().replace('\n', '\t').split()[0][1:]
                 
             else:
                 null_entry = True
                 
-                
-
-            
-                
         elif not null_entry:
             
             seq = fasta.readline()
+            fasta_dict[header] = seq
             
+            common_ids = set(blast_dict.keys) & set(fasta_dict.keys())
             
-            
-            blast_ids_set, fasta_ids_set = set(blast_dict.keys), set(fasta_dict.keys())
-            
-            
-
-            
-                            
-            if header.split()[0][1:] != id_blast:
+            for i in common_ids:
                 
-                fasta_dict[header] = seq
+                added_seq = fasta_dict.pop(i)
+                added_string = blast_dict.pop(i)
                 
-                # check if the id has already been saved to the dictionary
+                output.write(i + added_string + added_seq)
                 
-                for header_key in fasta_dict.keys():
-                    
-                    if header_key.split()[0][1:] == id_blast:
-                        
-                        header = header_key
-                        
-                        seq = fasta_dict.pop(header_key)
-                
-                
-                # write line to output file
-                output.write(header + desc_string + seq)
-        
         else:
             
             next(fasta)
@@ -177,12 +157,7 @@ with (open(fasta_file, 'r') as fasta,
             break
             
     
-    
-    
-    
-1: abd, 2: lkdf, 3: laskdf, 4: lkfjd
 
-2: lkadf, 4: sdjlkf, 1: lkdsa, 3: kljsd
     
     
     

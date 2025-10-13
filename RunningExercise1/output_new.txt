@@ -1,0 +1,787 @@
+2701_gGAF domain protein
+>2702_g	length=1383	scaffold=scaffold00449	strand=-
+2708_gHistidine kinase DhkG, putative
+>2709_g	length=1977	scaffold=scaffold00452	strand=+
+2710_gPolyubiquitin-A
+>2711_g	length=3942	scaffold=scaffold00452	strand=-
+2717_gMyo-inositol 1-phosphate synthase, putative 
+>2718_g	length=8691	scaffold=scaffold00455	strand=-
+2719_gPutative uncharacterized protein
+>2720_g	length=2460	scaffold=scaffold00456	strand=+
+2721_gPutative uncharacterized protein
+>2722_g	length=1722	scaffold=scaffold00457	strand=+
+2730_g41-2 antigen
+>2731_g	length=4086	scaffold=scaffold00459	strand=-
+2759_gGlycerol kinase, putative
+>2760_g	length=663	scaffold=scaffold00470	strand=-
+2763_gConserved Plasmodium protein
+>2764_g	length=1566	scaffold=scaffold00471	strand=+
+2770_g26s proteasome subunit p55, putative
+>2771_g	length=4131	scaffold=scaffold00473	strand=+
+2795_gPutative uncharacterized protein
+>2796_g	length=7191	scaffold=scaffold00480	strand=+
+2802_gCTP synthase
+>2803_g	length=507	scaffold=scaffold00483	strand=-
+2822_gZinc finger, C2H2 type, putative
+>2823_g	length=6609	scaffold=scaffold00489	strand=-
+2824_gPutative uncharacterized protein
+>2825_g	length=315	scaffold=scaffold00490	strand=+
+2826_gPutative uncharacterized protein
+>2827_g	length=2910	scaffold=scaffold00490	strand=-
+3009_gPutative uncharacterized protein
+>3010_g	length=2322	scaffold=scaffold00545	strand=+
+3011_gActin-like 6
+>3012_g	length=2955	scaffold=scaffold00546	strand=+
+3013_gMyosin A tail domain interacting protein 
+>3014_g	length=1542	scaffold=scaffold00546	strand=-
+3021_gConserved Plasmodium protein
+>3022_g	length=819	scaffold=scaffold00548	strand=-
+3023_gPutative uncharacterized protein
+>3024_g	length=2511	scaffold=scaffold00549	strand=+
+3025_gActin II, putative
+>3026_g	length=1437	scaffold=scaffold00550	strand=-
+3027_gATPase, AAA family, putative
+>3028_g	length=1095	scaffold=scaffold00550	strand=-
+3029_gPutative uncharacterized protein
+>3030_g	length=5034	scaffold=scaffold00551	strand=-
+3033_gVacuolar protein-sorting protein VPS45, 
+>3034_g	length=786	scaffold=scaffold00552	strand=-
+3035_gPutative uncharacterized protein (Fragment) 
+>3036_g	length=2793	scaffold=scaffold00552	strand=+
+3042_gERYTHROCYTE MEMBRANE PROTEIN PFEMP3
+>3043_g	length=6658	scaffold=scaffold00554	strand=-
+3046_gPutative uncharacterized protein
+>3047_g	length=1656	scaffold=scaffold00555	strand=+
+3050_gProtein kinase, putative
+>3051_g	length=4740	scaffold=scaffold00557	strand=-
+3057_gConserved Plasmodium protein
+>3058_g	length=3276	scaffold=scaffold00559	strand=-
+3059_gPutative uncharacterized protein
+>3060_g	length=6549	scaffold=scaffold00560	strand=-
+3061_gTranscription factor with AP2 domain(S), 
+>3062_g	length=5877	scaffold=scaffold00561	strand=-
+3063_gPutative uncharacterized protein
+>3064_g	length=198	scaffold=scaffold00562	strand=-
+3065_gRibosomal protein L27, putative
+>3066_g	length=180	scaffold=scaffold00562	strand=-
+3078_gPutative uncharacterized protein
+>3079_g	length=840	scaffold=scaffold00566	strand=-
+3080_gPutative uncharacterized protein
+>3081_g	length=1076	scaffold=scaffold00568	strand=-
+3091_gWD-repeat protein, putative
+>3092_g	length=2793	scaffold=scaffold00571	strand=-
+3106_gPurine nucleoside phosphorylase
+>3107_g	length=1362	scaffold=scaffold00578	strand=+
+3108_gPutative uncharacterized protein
+>3109_g	length=705	scaffold=scaffold00578	strand=+
+3110_gRac-beta serine/threonine protein kinase, 
+>3111_g	length=1449	scaffold=scaffold00578	strand=-
+3114_gPutative uncharacterized protein (Fragment) 
+>3115_g	length=7704	scaffold=scaffold00581	strand=+
+3116_gPutative uncharacterized protein
+>3117_g	length=1284	scaffold=scaffold00583	strand=-
+3118_gCalcium-dependent protein kinase, putative 
+>3119_g	length=777	scaffold=scaffold00584	strand=+
+3120_gPutative uncharacterized protein
+>3121_g	length=1296	scaffold=scaffold00586	strand=+
+3122_gDNA helicase, putative
+>3123_g	length=792	scaffold=scaffold00586	strand=+
+3124_gUDP-N-acetylglucosamine pyrophosphorylase, 
+>3125_g	length=331	scaffold=scaffold00586	strand=-
+3126_gDNA polymerase
+>3127_g	length=840	scaffold=scaffold00588	strand=+
+3149_gtRNA dimethylallyltransferase
+>3150_g	length=1398	scaffold=scaffold00594	strand=-
+3151_gPutative uncharacterized protein
+>3152_g	length=1128	scaffold=scaffold00595	strand=-
+3153_gPutative uncharacterized protein
+>3154_g	length=369	scaffold=scaffold00595	strand=+
+3155_gPutative uncharacterized protein
+>3156_g	length=759	scaffold=scaffold00596	strand=-
+3157_gSerine--tRNA ligase, cytoplasmic
+>3158_g	length=2079	scaffold=scaffold00596	strand=-
+3179_gPutative uncharacterized protein (Fragment) 
+>3180_g	length=399	scaffold=scaffold00605	strand=+
+3181_gPutative uncharacterized protein
+>3182_g	length=1536	scaffold=scaffold00606	strand=-
+3224_gPutative uncharacterized protein
+>3225_g	length=549	scaffold=scaffold00621	strand=+
+3226_gPutative uncharacterized protein
+>3227_g	length=8578	scaffold=scaffold00622	strand=+
+3228_gConserved Plasmodium protein
+>3229_g	length=1272	scaffold=scaffold00623	strand=-
+3230_gPutative uncharacterized protein
+>3231_g	length=630	scaffold=scaffold00624	strand=-
+3251_gPutative uncharacterized protein
+>3252_g	length=486	scaffold=scaffold00631	strand=-
+3253_gConserved Plasmodium protein
+>3254_g	length=2489	scaffold=scaffold00632	strand=+
+3255_gConserved Plasmodium protein
+>3256_g	length=444	scaffold=scaffold00632	strand=+
+3257_gPutative uncharacterized protein
+>3258_g	length=2109	scaffold=scaffold00634	strand=+
+3302_gATP-dependent heat shock protein, putative 
+>3303_g	length=855	scaffold=scaffold00655	strand=+
+3311_gBasic transcription factor 3b, putative 
+>3312_g	length=1182	scaffold=scaffold00658	strand=+
+3313_gCell cycle control protein cwf15 homologue,putative 
+>3314_g	length=1848	scaffold=scaffold00658	strand=-
+3315_gViral A-type inclusion protein repeat, 
+>3316_g	length=699	scaffold=scaffold00660	strand=-
+3332_gPutative uncharacterized protein
+>3333_g	length=1311	scaffold=scaffold00666	strand=-
+3345_gViral A-type inclusion protein, putative 
+>3346_g	length=3615	scaffold=scaffold00669	strand=-
+3356_gPutative uncharacterized protein
+>3357_g	length=360	scaffold=scaffold00673	strand=+
+3368_gPutative uncharacterized protein PY05354 
+>3369_g	length=3570	scaffold=scaffold00678	strand=+
+3370_gPutative uncharacterized protein
+>3371_g	length=2010	scaffold=scaffold00679	strand=-
+3374_gSimilar to U3 snoRNP-associated 55-kDa 
+>3375_g	length=873	scaffold=scaffold00680	strand=+
+3376_gPutative uncharacterized protein
+>3377_g	length=480	scaffold=scaffold00681	strand=-
+3380_gKinesin-like protein, putative
+>3381_g	length=5118	scaffold=scaffold00683	strand=-
+3382_gPutative uncharacterized protein
+>3383_g	length=567	scaffold=scaffold00683	strand=-
+3384_gPutative uncharacterized protein
+>3385_g	length=2682	scaffold=scaffold00684	strand=-
+3386_gCoiled-coil domain-containing protein PF11_0455 
+>3387_g	length=249	scaffold=scaffold00685	strand=-
+3391_gDihydrolipoamide succinyltransferase
+>3392_g	length=1976	scaffold=scaffold00687	strand=+
+3393_gPutative uncharacterized protein (Fragment) 
+>3394_g	length=4755	scaffold=scaffold00688	strand=+
+3407_gPutative uncharacterized protein
+>3408_g	length=4042	scaffold=scaffold00693	strand=-
+3413_gPutative uncharacterized protein
+>3414_g	length=69	scaffold=scaffold00695	strand=-
+3428_gDIM1 protein homolog, putative
+>3429_g	length=3534	scaffold=scaffold00700	strand=-
+3442_gPHF5-like protein, putative
+>3443_g	length=927	scaffold=scaffold00707	strand=-
+3484_gRibosomal protein L15, putative
+>3485_g	length=756	scaffold=scaffold00725	strand=-
+3491_gPutative uncharacterized protein
+>3492_g	length=1059	scaffold=scaffold00727	strand=-
+3513_gPutative uncharacterized protein
+>3514_g	length=1665	scaffold=scaffold00735	strand=-
+3517_gTransporter
+>3518_g	length=1143	scaffold=scaffold00737	strand=-
+3519_gCysteine repeat modular protein 2 PbCRM2, 
+>3520_g	length=1652	scaffold=scaffold00738	strand=-
+3524_gCysteine-rich surface protein (Fragment) 
+>3525_g	length=210	scaffold=scaffold00741	strand=+
+3526_gConserved Plasmodium protein
+>3527_g	length=1690	scaffold=scaffold00741	strand=-
+3528_gConserved Plasmodium protein
+>3529_g	length=1194	scaffold=scaffold00742	strand=-
+3546_gPutative uncharacterized protein PY04352 
+>3547_g	length=1869	scaffold=scaffold00749	strand=-
+3548_gPutative uncharacterized protein
+>3549_g	length=4833	scaffold=scaffold00750	strand=-
+3550_gP1 nuclease, putative
+>3551_g	length=492	scaffold=scaffold00751	strand=-
+3552_gPutative uncharacterized protein
+>3553_g	length=4173	scaffold=scaffold00752	strand=-
+3557_gPutative uncharacterized protein
+>3558_g	length=1731	scaffold=scaffold00755	strand=+
+3559_gPutative uncharacterized protein
+>3560_g	length=1257	scaffold=scaffold00756	strand=+
+3566_gRNA helicase, putative
+>3567_g	length=4437	scaffold=scaffold00760	strand=-
+3568_gPutative uncharacterized protein
+>3569_g	length=6137	scaffold=scaffold00761	strand=-
+3570_gHigh mobility group-like protein NHP2, 
+>3571_g	length=3786	scaffold=scaffold00762	strand=-
+3572_gPutative uncharacterized protein
+>3573_g	length=1920	scaffold=scaffold00763	strand=-
+3577_gPutative uncharacterized protein
+>3578_g	length=885	scaffold=scaffold00765	strand=-
+3579_gPutative uncharacterized protein PY03493 
+>3580_g	length=1164	scaffold=scaffold00766	strand=-
+3581_gPutative uncharacterized protein PY04962 
+>3582_g	length=156	scaffold=scaffold00767	strand=-
+3583_gPutative uncharacterized protein PY03817 
+>3584_g	length=132	scaffold=scaffold00768	strand=-
+3585_gDynein-associated protein, putative
+>3586_g	length=378	scaffold=scaffold00768	strand=+
+3602_gPutative uncharacterized protein
+>3603_g	length=6687	scaffold=scaffold00777	strand=+
+3604_gN-acetyltransferase, putative
+>3605_g	length=525	scaffold=scaffold00778	strand=+
+3606_gSET domain protein, putative
+>3607_g	length=4396	scaffold=scaffold00780	strand=-
+3616_gPredicted protein
+>3617_g	length=573	scaffold=scaffold00784	strand=-
+3618_gPutative uncharacterized protein
+>3619_g	length=411	scaffold=scaffold00784	strand=-
+3653_gPutative uncharacterized protein pkci1 
+>3654_g	length=3138	scaffold=scaffold00799	strand=-
+3660_gPutative uncharacterized protein
+>3661_g	length=3909	scaffold=scaffold00802	strand=-
+3662_gReplication factor C subunit 4
+>3663_g	length=2313	scaffold=scaffold00803	strand=-
+3670_gSulfate transporter, putative
+>3671_g	length=1959	scaffold=scaffold00807	strand=-
+3678_gProteasome subunit beta type
+>3679_g	length=1359	scaffold=scaffold00812	strand=-
+3680_gPutative uncharacterized protein
+>3681_g	length=4923	scaffold=scaffold00813	strand=-
+3682_gPutative uncharacterized protein
+>3683_g	length=1353	scaffold=scaffold00814	strand=-
+3686_gPutative uncharacterized protein
+>3687_g	length=1479	scaffold=scaffold00815	strand=-
+3688_gQueuine tRNA-ribosyltransferase, putative 
+>3689_g	length=1092	scaffold=scaffold00817	strand=+
+3701_gNOT2 / NOT3 / NOT5 family protein, putative 
+>3702_g	length=183	scaffold=scaffold00821	strand=+
+3703_gDNA/RNA-binding protein, putative
+>3704_g	length=492	scaffold=scaffold00822	strand=+
+3705_gConserved Plasmodium protein
+>3706_g	length=5307	scaffold=scaffold00823	strand=+
+3716_gPutative uncharacterized protein
+>3717_g	length=39	scaffold=scaffold00828	strand=-
+3721_gTranscription initiation factor TFiid, 
+>3722_g	length=528	scaffold=scaffold00829	strand=+
+3725_gPutative uncharacterized protein
+>3726_g	length=468	scaffold=scaffold00831	strand=+
+3727_gErythrocyte binding protein 1
+>3728_g	length=3657	scaffold=scaffold00832	strand=+
+3741_gPutative uncharacterized protein
+>3742_g	length=4878	scaffold=scaffold00840	strand=-
+3743_gRab2 gtpase, putative
+>3744_g	length=3087	scaffold=scaffold00841	strand=-
+3749_gUncharacterized protein (Fragment)
+>3750_g	length=1890	scaffold=scaffold00843	strand=-
+3754_gPutative uncharacterized protein (Fragment) 
+>3755_g	length=3882	scaffold=scaffold00844	strand=-
+3787_gPutative uncharacterized protein PY05287 
+>3788_g	length=87	scaffold=scaffold00859	strand=+
+3789_gTranscription factor with AP2 domain(S), 
+>3790_g	length=6561	scaffold=scaffold00861	strand=-
+3802_gPutative uncharacterized protein
+>3803_g	length=864	scaffold=scaffold00867	strand=+
+3804_gInsulinase, putative
+>3805_g	length=300	scaffold=scaffold00867	strand=-
+3809_gPutative uncharacterized protein PY05931 
+>3810_g	length=5769	scaffold=scaffold00872	strand=-
+3818_gPutative uncharacterized protein
+>3819_g	length=2922	scaffold=scaffold00877	strand=-
+3820_gPutative uncharacterized protein
+>3821_g	length=2391	scaffold=scaffold00878	strand=-
+3831_gPutative uncharacterized protein
+>3832_g	length=2358	scaffold=scaffold00883	strand=+
+3833_gTransporter, putative
+>3834_g	length=1426	scaffold=scaffold00884	strand=+
+3835_gDNA-directed RNA polymerase, omega subunit 
+>3836_g	length=5721	scaffold=scaffold00885	strand=+
+3839_gPutative uncharacterized protein
+>3840_g	length=6057	scaffold=scaffold00887	strand=-
+3867_g2-oxoglutarate dehydrogenase e1 component, 
+>3868_g	length=867	scaffold=scaffold00900	strand=-
+3869_gCG15040
+>3870_g	length=1347	scaffold=scaffold00902	strand=-
+3887_gPutative uncharacterized protein (Fragment) 
+>3888_g	length=1182	scaffold=scaffold00911	strand=+
+3889_gSAM-dependent methyltransferase related 
+>3890_g	length=1437	scaffold=scaffold00912	strand=+
+3948_gConserved Plasmodium protein
+>3949_g	length=765	scaffold=scaffold00940	strand=-
+3986_gPutative uncharacterized protein
+>3987_g	length=5067	scaffold=scaffold00956	strand=-
+3995_gSNARE protein
+>3996_g	length=1887	scaffold=scaffold00962	strand=-
+4007_gPutative uncharacterized protein
+>4008_g	length=350	scaffold=scaffold00969	strand=-
+4027_gHigh molecular weight rhoptry protein-2 
+>4028_g	length=3055	scaffold=scaffold00979	strand=-
+4034_gPutative uncharacterized protein (Fragment) 
+>4035_g	length=2901	scaffold=scaffold00982	strand=+
+4063_gConserved Plasmodium protein
+>4064_g	length=2349	scaffold=scaffold00998	strand=-
+4067_gProtein phosphatase, putative
+>4068_g	length=429	scaffold=scaffold00999	strand=-
+4069_gPutative uncharacterized protein
+>4070_g	length=5407	scaffold=scaffold01000	strand=-
+4085_gPutative uncharacterized protein
+>4086_g	length=522	scaffold=scaffold01008	strand=+
+4087_gConserved Plasmodium protein
+>4088_g	length=1195	scaffold=scaffold01009	strand=-
+4089_gPutative uncharacterized protein
+>4090_g	length=558	scaffold=scaffold01010	strand=+
+4096_gSNARE protein
+>4097_g	length=132	scaffold=scaffold01014	strand=-
+4098_gPutative uncharacterized protein
+>4099_g	length=948	scaffold=scaffold01015	strand=-
+4108_gReplication factor c protein, putative 
+>4109_g	length=111	scaffold=scaffold01018	strand=-
+4110_gPhosphatidylserine decarboxylase
+>4111_g	length=876	scaffold=scaffold01019	strand=-
+4118_gProbable serine/threonine-protein kinase 
+>4119_g	length=2646	scaffold=scaffold01023	strand=-
+4157_gPutative uncharacterized protein
+>4158_g	length=228	scaffold=scaffold01047	strand=-
+4164_gPutative uncharacterized protein
+>4165_g	length=3564	scaffold=scaffold01052	strand=-
+4166_gPutative uncharacterized protein (Fragment) 
+>4167_g	length=1779	scaffold=scaffold01053	strand=-
+4168_gMRNA capping enzyme, putative (Fragment) 
+>4169_g	length=189	scaffold=scaffold01054	strand=-
+4170_gMB2 (Fragment)
+>4171_g	length=1623	scaffold=scaffold01056	strand=-
+4172_gKelch protein, putative
+>4173_g	length=136	scaffold=scaffold01057	strand=-
+4174_gUDP-N-acetyl glucosamine:UMP antiporter 
+>4175_g	length=2142	scaffold=scaffold01058	strand=-
+4190_gSegregation protein SMC
+>4191_g	length=4750	scaffold=scaffold01069	strand=-
+4197_gPutative uncharacterized protein
+>4198_g	length=3579	scaffold=scaffold01073	strand=-
+4213_gPeptide chain release factor 1, putative 
+>4214_g	length=174	scaffold=scaffold01080	strand=-
+4221_gConserved Plasmodium protein
+>4222_g	length=876	scaffold=scaffold01084	strand=-
+4223_gGlutathione peroxidase
+>4224_g	length=2922	scaffold=scaffold01085	strand=+
+4228_gPutative uncharacterized protein
+>4229_g	length=1077	scaffold=scaffold01087	strand=-
+4230_gPutative uncharacterized protein
+>4231_g	length=2898	scaffold=scaffold01089	strand=-
+4232_gConserved Plasmodium protein
+>4233_g	length=4884	scaffold=scaffold01091	strand=+
+4236_gMannose-6-phosphate isomerase, putative 
+>4237_g	length=828	scaffold=scaffold01094	strand=-
+4242_gUncharacterized protein (Fragment)
+>4243_g	length=114	scaffold=scaffold01095	strand=+
+4244_gPutative uncharacterized protein
+>4245_g	length=4280	scaffold=scaffold01097	strand=-
+4248_gChromosome condensation protein, putative 
+>4249_g	length=200	scaffold=scaffold01100	strand=+
+4250_gCytochrome b (Fragment)
+>4251_g	length=135	scaffold=scaffold01100	strand=+
+4266_gUncharacterized protein (Fragment)
+>4267_g	length=690	scaffold=scaffold01110	strand=-
+4268_gGeranylgeranyl transferase type2 beta 
+>4269_g	length=1058	scaffold=scaffold01111	strand=+
+4270_gPutative uncharacterized protein (Fragment) 
+>4271_g	length=81	scaffold=scaffold01112	strand=-
+4294_gMethionine aminopeptidase, putative
+>4295_g	length=837	scaffold=scaffold01125	strand=-
+4359_gPutative uncharacterized protein PY01809 
+>4360_g	length=2418	scaffold=scaffold01159	strand=-
+4361_gProtein kinase, putative (Fragment)
+>4362_g	length=198	scaffold=scaffold01161	strand=+
+4372_gGlycerol-3-phosphate dehydrogenase, putative 
+>4373_g	length=150	scaffold=scaffold01166	strand=-
+4376_gCullin-like protein, putative
+>4377_g	length=1818	scaffold=scaffold01170	strand=-
+4378_gPutative uncharacterized protein
+>4379_g	length=2580	scaffold=scaffold01171	strand=-
+4383_gPutative uncharacterized protein
+>4384_g	length=63	scaffold=scaffold01173	strand=+
+4402_gAdenosylhomocysteinase
+>4403_g	length=2151	scaffold=scaffold01182	strand=-
+4406_g26S proteasome regulatory subunit 4, putative 
+>4407_g	length=641	scaffold=scaffold01185	strand=+
+4408_gPutative uncharacterized protein
+>4409_g	length=2622	scaffold=scaffold01185	strand=+
+4415_gDynein heavy chain, putative
+>4416_g	length=96	scaffold=scaffold01190	strand=+
+4443_gPutative uncharacterized protein
+>4444_g	length=1140	scaffold=scaffold01206	strand=-
+4460_gPutative uncharacterized protein
+>4461_g	length=2244	scaffold=scaffold01214	strand=-
+4462_gPutative uncharacterized protein
+>4463_g	length=1890	scaffold=scaffold01216	strand=+
+4478_gPutative uncharacterized protein
+>4479_g	length=1218	scaffold=scaffold01226	strand=-
+4495_gUncharacterized protein (Fragment)
+>4496_g	length=477	scaffold=scaffold01235	strand=+
+4499_gConserved Plasmodium protein
+>4500_g	length=1416	scaffold=scaffold01238	strand=+
+4501_gPutative uncharacterized protein (Fragment) 
+>4502_g	length=174	scaffold=scaffold01239	strand=-
+4503_gPutative uncharacterized protein
+>4504_g	length=522	scaffold=scaffold01240	strand=-
+4508_gProtein kinase domain protein
+>4509_g	length=309	scaffold=scaffold01242	strand=-
+4510_gPutative uncharacterized protein
+>4511_g	length=51	scaffold=scaffold01243	strand=-
+4512_gG/T mismatch binding protein-related
+>4513_g	length=1389	scaffold=scaffold01245	strand=-
+4516_gAsparagine-tRNA ligase, putative
+>4517_g	length=1857	scaffold=scaffold01248	strand=-
+4518_gSEL-1 protein, putative
+>4519_g	length=3357	scaffold=scaffold01250	strand=-
+4520_gPutative uncharacterized protein
+>4521_g	length=2427	scaffold=scaffold01252	strand=-
+4524_gSer/Thr protein phosphatase, putative 
+>4525_g	length=699	scaffold=scaffold01254	strand=+
+4529_gCCAAT-box DNA binding protein subunit 
+>4530_g	length=654	scaffold=scaffold01258	strand=-
+4543_gConserved Plasmodium protein
+>4544_g	length=2175	scaffold=scaffold01266	strand=-
+4545_gUncharacterized protein (Fragment)
+>4546_g	length=1104	scaffold=scaffold01267	strand=+
+4547_gUncharacterized protein (Fragment)
+>4548_g	length=1092	scaffold=scaffold01267	strand=-
+4552_gElongation factor G, putative
+>4553_g	length=3753	scaffold=scaffold01271	strand=-
+4583_gPutative uncharacterized protein
+>4584_g	length=27	scaffold=scaffold01291	strand=+
+4585_gCPW-WPC family protein
+>4586_g	length=2997	scaffold=scaffold01293	strand=-
+4601_gPutative uncharacterized protein
+>4602_g	length=1343	scaffold=scaffold01301	strand=-
+4603_gExoribonuclease, putative
+>4604_g	length=3735	scaffold=scaffold01303	strand=-
+4635_gProtein phosphatase 2C, putative
+>4636_g	length=588	scaffold=scaffold01321	strand=-
+4644_gPutative uncharacterized protein
+>4645_g	length=1422	scaffold=scaffold01326	strand=-
+4648_gAnamorsin homolog
+>4649_g	length=3897	scaffold=scaffold01329	strand=-
+4650_gSin3 associated polypeptide p18-like protein, 
+>4651_g	length=1473	scaffold=scaffold01331	strand=+
+4652_gPutative uncharacterized protein
+>4653_g	length=894	scaffold=scaffold01332	strand=-
+4654_gPutative uncharacterized protein
+>4655_g	length=408	scaffold=scaffold01334	strand=+
+4656_gPutative uncharacterized protein (Fragment) 
+>4657_g	length=4008	scaffold=scaffold01336	strand=-
+4676_gPutative uncharacterized protein
+>4677_g	length=735	scaffold=scaffold01350	strand=-
+4678_gPutative uncharacterized protein
+>4679_g	length=123	scaffold=scaffold01350	strand=-
+4685_gDEAD box helicase, putative
+>4686_g	length=147	scaffold=scaffold01355	strand=-
+4689_gConserved Plasmodium protein
+>4690_g	length=513	scaffold=scaffold01357	strand=-
+4691_gConserved Plasmodium membrane protein 
+>4692_g	length=318	scaffold=scaffold01358	strand=+
+4693_gPutative uncharacterized protein
+>4694_g	length=399	scaffold=scaffold01359	strand=+
+4697_gLysine decarboxylase, putative
+>4698_g	length=1524	scaffold=scaffold01361	strand=-
+4706_gConserved Plasmodium protein
+>4707_g	length=1222	scaffold=scaffold01367	strand=-
+4708_gUncharacterized protein (Fragment)
+>4709_g	length=3234	scaffold=scaffold01369	strand=-
+4710_gPolymerase protein (Fragment)
+>4711_g	length=1147	scaffold=scaffold01370	strand=-
+4723_gTranscription factor, putative
+>4724_g	length=603	scaffold=scaffold01379	strand=-
+4725_gPutative uncharacterized protein (Fragment) 
+>4726_g	length=618	scaffold=scaffold01380	strand=-
+4736_gPutative uncharacterized protein
+>4737_g	length=537	scaffold=scaffold01387	strand=-
+4741_gPutative uncharacterized protein PY02894 
+>4742_g	length=765	scaffold=scaffold01390	strand=-
+4743_gConserved Plasmodium protein
+>4744_g	length=1737	scaffold=scaffold01392	strand=-
+4745_gPutative uncharacterized protein PY04575 
+>4746_g	length=1920	scaffold=scaffold01394	strand=-
+4754_gPutative uncharacterized protein (Fragment) 
+>4755_g	length=999	scaffold=scaffold01399	strand=-
+4763_gtRNA nucleotidyltransferase, putative 
+>4764_g	length=1818	scaffold=scaffold01405	strand=-
+4765_gPutative uncharacterized protein (Fragment) 
+>4766_g	length=2283	scaffold=scaffold01407	strand=+
+4804_gPutative uncharacterized protein
+>4805_g	length=3504	scaffold=scaffold01431	strand=-
+4806_gPutative uncharacterized protein
+>4807_g	length=2171	scaffold=scaffold01432	strand=-
+4808_gProteasome subunit alpha type
+>4809_g	length=684	scaffold=scaffold01433	strand=+
+4829_gGJ10070
+>4830_g	length=3183	scaffold=scaffold01447	strand=-
+4831_gSplicing factor, putative
+>4832_g	length=1671	scaffold=scaffold01449	strand=-
+4859_gPutative uncharacterized protein
+>4860_g	length=1248	scaffold=scaffold01468	strand=-
+4864_gUbiquitin carboxyl-terminal hydrolase 
+>4865_g	length=1605	scaffold=scaffold01473	strand=-
+4879_gConserved Plasmodium protein
+>4880_g	length=2790	scaffold=scaffold01482	strand=-
+4881_gPutative uncharacterized protein
+>4882_g	length=1602	scaffold=scaffold01484	strand=-
+4892_gPutative uncharacterized protein
+>4893_g	length=60	scaffold=scaffold01490	strand=+
+4894_gPutative uncharacterized protein
+>4895_g	length=267	scaffold=scaffold01491	strand=-
+4896_gPutative uncharacterized protein
+>4897_g	length=2644	scaffold=scaffold01493	strand=+
+4911_gRNA binding protein, putative
+>4912_g	length=3058	scaffold=scaffold01500	strand=-
+4916_gMetabolite/drug transporter, putative 
+>4917_g	length=471	scaffold=scaffold01504	strand=+
+4918_gPutative uncharacterized protein PY02743 
+>4919_g	length=1041	scaffold=scaffold01505	strand=-
+4920_gSaccharomyces cerevisiae ORF 2310-related 
+>4921_g	length=1215	scaffold=scaffold01506	strand=+
+4922_gPutative uncharacterized protein
+>4923_g	length=134	scaffold=scaffold01507	strand=+
+4930_gPutative uncharacterized protein
+>4931_g	length=1953	scaffold=scaffold01514	strand=+
+4939_gDolichyl-phosphate b-d-mannosyltransferase,putative 
+>4940_g	length=435	scaffold=scaffold01520	strand=-
+4941_gPutative uncharacterized protein (Fragment) 
+>4942_g	length=969	scaffold=scaffold01522	strand=-
+4943_gRiboflavin kinase / FAD synthase family 
+>4944_g	length=3111	scaffold=scaffold01524	strand=-
+4948_gPutative uncharacterized protein
+>4949_g	length=900	scaffold=scaffold01526	strand=-
+4962_gMethionine-tRNA ligase, putative
+>4963_g	length=2685	scaffold=scaffold01537	strand=-
+4974_gPutative uncharacterized protein PY02102 
+>4975_g	length=99	scaffold=scaffold01547	strand=-
+4978_gPutative uncharacterized protein
+>4979_g	length=63	scaffold=scaffold01550	strand=-
+4989_gGTPase activating protein for Arf, putative 
+>4990_g	length=3008	scaffold=scaffold01558	strand=-
+5002_gTranscription factor Tfb2, putative
+>5003_g	length=297	scaffold=scaffold01567	strand=-
+5021_gPutative uncharacterized protein
+>5022_g	length=2704	scaffold=scaffold01580	strand=-
+5023_gENTH domain containing protein
+>5024_g	length=729	scaffold=scaffold01582	strand=+
+5025_gConserved Plasmodium protein
+>5026_g	length=555	scaffold=scaffold01583	strand=-
+5036_g60S ribosomal protein L19, putative
+>5037_g	length=918	scaffold=scaffold01588	strand=-
+1_gFructose-bisphosphate aldolase
+>2_g	length=531	scaffold=scaffold00001	strand=+
+5082_gPutative uncharacterized protein (Fragment) 
+>5083_g	length=2205	scaffold=scaffold01617	strand=-
+5084_gSer/Thr protein kinase
+>5085_g	length=2421	scaffold=scaffold01618	strand=-
+3_gPutative uncharacterized protein PY03707 
+>4_g	length=3114	scaffold=scaffold00001	strand=-
+5088_gPutative uncharacterized protein
+>5089_g	length=1882	scaffold=scaffold01621	strand=-
+5_gATP-dependent RNA helicase (Fragment) 
+>6_g	length=1755	scaffold=scaffold00001	strand=+
+7_gSerine/threonine kinase-1, PfLammer
+>8_g	length=462	scaffold=scaffold00001	strand=+
+5096_gUncharacterized protein (Fragment)
+>5097_g	length=2817	scaffold=scaffold01626	strand=+
+5098_gCircumsporozoite protein/thrombospondin-related 
+>5099_g	length=2720	scaffold=scaffold01628	strand=+
+5100_gPutative uncharacterized protein
+>5101_g	length=348	scaffold=scaffold01629	strand=-
+5102_gPutative uncharacterized protein
+>5103_g	length=1479	scaffold=scaffold01631	strand=-
+5141_gConserved Plasmodium protein
+>5142_g	length=258	scaffold=scaffold01660	strand=-
+32_gPutative uncharacterized protein
+>33_g	length=2547	scaffold=scaffold00002	strand=+
+5143_gPutative uncharacterized protein (Fragment) 
+>5144_g	length=2128	scaffold=scaffold01662	strand=+
+5145_gConserved Plasmodium protein
+>5146_g	length=390	scaffold=scaffold01664	strand=+
+34_gPutative uncharacterized protein
+>35_g	length=2472	scaffold=scaffold00002	strand=+
+5147_gPutative uncharacterized protein
+>5148_g	length=2571	scaffold=scaffold01665	strand=-
+36_gPutative uncharacterized protein
+>37_g	length=2289	scaffold=scaffold00002	strand=+
+5153_gPutative uncharacterized protein PY01749 
+>5154_g	length=315	scaffold=scaffold01669	strand=+
+38_gPutative uncharacterized protein
+>39_g	length=621	scaffold=scaffold00002	strand=+
+5155_gPutative uncharacterized protein
+>5156_g	length=36	scaffold=scaffold01671	strand=-
+40_gPutative uncharacterized protein PY02309 
+>41_g	length=1089	scaffold=scaffold00002	strand=+
+5161_gFerrochelatase
+>5162_g	length=1905	scaffold=scaffold01675	strand=-
+5163_gCCAAT-box DNA binding protein subunit 
+>5164_g	length=759	scaffold=scaffold01677	strand=-
+5169_gPutative uncharacterized protein
+>5170_g	length=1383	scaffold=scaffold01680	strand=-
+5171_gPutative uncharacterized protein
+>5172_g	length=1032	scaffold=scaffold01681	strand=-
+5173_gPutative uncharacterized protein (Fragment) 
+>5174_g	length=177	scaffold=scaffold01682	strand=-
+5175_gThiF family protein, putative
+>5176_g	length=450	scaffold=scaffold01684	strand=+
+5177_gPutative uncharacterized protein
+>5178_g	length=42	scaffold=scaffold01685	strand=+
+5213_gUncharacterized protein (Fragment)
+>5214_g	length=1940	scaffold=scaffold01710	strand=-
+5217_gPutative uncharacterized protein
+>5218_g	length=1342	scaffold=scaffold01713	strand=+
+5219_gSerine/threonine kinase 13-related
+>5220_g	length=441	scaffold=scaffold01715	strand=+
+88_gPutative uncharacterized protein
+>89_g	length=612	scaffold=scaffold00004	strand=-
+90_g60S ribosomal protein L18a
+>91_g	length=1806	scaffold=scaffold00004	strand=-
+92_gSmall GTPase rab11b, putative
+>93_g	length=1974	scaffold=scaffold00005	strand=-
+94_gS-phase kinase-associated protein 1A, 
+>95_g	length=1071	scaffold=scaffold00005	strand=-
+96_gPutative uncharacterized protein (Fragment) 
+>97_g	length=426	scaffold=scaffold00005	strand=-
+5272_gPutative uncharacterized protein
+>5273_g	length=1401	scaffold=scaffold01756	strand=-
+98_gConserved Plasmodium protein
+>99_g	length=477	scaffold=scaffold00005	strand=+
+5274_gPutative uncharacterized protein
+>5275_g	length=408	scaffold=scaffold01758	strand=+
+102_gNucleoside diphosphate kinase
+>103_g	length=3186	scaffold=scaffold00005	strand=+
+104_gPutative uncharacterized protein
+>105_g	length=407	scaffold=scaffold00005	strand=+
+106_gPutative uncharacterized protein
+>107_g	length=2478	scaffold=scaffold00005	strand=+
+5291_gPutative uncharacterized protein
+>5292_g	length=600	scaffold=scaffold01769	strand=+
+5299_gPutative uncharacterized protein
+>5300_g	length=918	scaffold=scaffold01773	strand=-
+5301_gPutative uncharacterized protein
+>5302_g	length=138	scaffold=scaffold01774	strand=-
+5309_gPutative uncharacterized protein
+>5310_g	length=1086	scaffold=scaffold01780	strand=+
+5311_gPutative uncharacterized protein (Fragment) 
+>5312_g	length=534	scaffold=scaffold01781	strand=-
+5315_gPutative uncharacterized protein
+>5316_g	length=2316	scaffold=scaffold01784	strand=-
+5317_gPutative uncharacterized protein PY05565 
+>5318_g	length=843	scaffold=scaffold01786	strand=+
+5321_gPutative uncharacterized protein
+>5322_g	length=2061	scaffold=scaffold01789	strand=-
+126_gPutative uncharacterized protein PY00634 
+>127_g	length=1575	scaffold=scaffold00006	strand=+
+128_gMitochondrial import inner membrane translocase 
+>129_g	length=762	scaffold=scaffold00006	strand=+
+130_gPutative uncharacterized protein
+>131_g	length=1299	scaffold=scaffold00006	strand=+
+132_gPutative uncharacterized protein
+>133_g	length=46	scaffold=scaffold00006	strand=+
+5342_gBeta lactamase
+>5343_g	length=492	scaffold=scaffold01803	strand=+
+5344_gPutative uncharacterized protein
+>5345_g	length=291	scaffold=scaffold01805	strand=+
+5346_gIron-sulfur cluster assembly accessory 
+>5347_g	length=1191	scaffold=scaffold01807	strand=+
+5348_gP-loop containing nucleoside triphospahte 
+>5349_g	length=1739	scaffold=scaffold01809	strand=+
+5352_gConserved Plasmodium membrane protein 
+>5353_g	length=1197	scaffold=scaffold01812	strand=-
+5356_gUncharacterized protein (Fragment)
+>5357_g	length=159	scaffold=scaffold01815	strand=-
+5358_gPutative uncharacterized protein
+>5359_g	length=63	scaffold=scaffold01817	strand=+
+5360_gGlutamate dehydrogenase, putative (Fragment) 
+>5361_g	length=2263	scaffold=scaffold01818	strand=-
+5362_gPutative uncharacterized protein
+>5363_g	length=2283	scaffold=scaffold01820	strand=-
+145_gPutative uncharacterized protein
+>146_g	length=2754	scaffold=scaffold00007	strand=+
+5364_gPutative uncharacterized protein (Fragment) 
+>5365_g	length=1842	scaffold=scaffold01822	strand=-
+147_gPutative uncharacterized protein
+>148_g	length=420	scaffold=scaffold00008	strand=+
+5368_gConserved Plasmodium protein
+>5369_g	length=453	scaffold=scaffold01826	strand=+
+5370_gPoly(A) polymerase III
+>5371_g	length=136	scaffold=scaffold01827	strand=-
+5374_gNifU-like protein, putative
+>5375_g	length=1050	scaffold=scaffold01830	strand=+
+5376_gPutative uncharacterized protein
+>5377_g	length=1869	scaffold=scaffold01831	strand=-
+5378_gPutative uncharacterized protein
+>5379_g	length=1920	scaffold=scaffold01833	strand=-
+5380_gPutative uncharacterized protein
+>5381_g	length=516	scaffold=scaffold01835	strand=+
+5382_gPutative uncharacterized protein PY00135 
+>5383_g	length=165	scaffold=scaffold01836	strand=-
+5386_gPutative uncharacterized protein
+>5387_g	length=123	scaffold=scaffold01838	strand=+
+5388_gKIAA1466 protein (Fragment)
+>5389_g	length=834	scaffold=scaffold01839	strand=-
+162_gPutative uncharacterized protein
+>163_g	length=120	scaffold=scaffold00008	strand=+
+164_gDrosophila melanogaster LD33759p
+>165_g	length=327	scaffold=scaffold00008	strand=-
+166_gPutative uncharacterized protein
+>167_g	length=3094	scaffold=scaffold00009	strand=-
+5416_gDNA-directed RNA polymerase iii largest 
+>5417_g	length=654	scaffold=scaffold01857	strand=-
+172_gPutative pre-mRNA splicing factor
+>173_g	length=5895	scaffold=scaffold00009	strand=+
+5418_gWD-repeat protein, putative
+>5419_g	length=42	scaffold=scaffold01857	strand=-
+174_gPutative uncharacterized protein
+>175_g	length=255	scaffold=scaffold00009	strand=-
+5420_gATP-dependent RNA helicase, putative
+>5421_g	length=264	scaffold=scaffold01859	strand=+
+176_gHeat shock protein DnaJ homologue Pfj2 
+>177_g	length=1020	scaffold=scaffold00009	strand=+
+178_gSuccinyl-CoA synthetase alpha subunit 
+>179_g	length=882	scaffold=scaffold00009	strand=-
+180_gPutative uncharacterized protein PY00338 
+>181_g	length=5820	scaffold=scaffold00010	strand=-
+5439_gUncharacterized protein (Fragment)
+>5440_g	length=414	scaffold=scaffold01874	strand=+
+5480_gSmall nuclear ribonucleoprotein F, putative 
+>5481_g	length=36	scaffold=scaffold01904	strand=+
+5482_gPOL-like (Fragment)
+>5483_g	length=1473	scaffold=scaffold01906	strand=-
+5486_gPutative uncharacterized protein
+>5487_g	length=2007	scaffold=scaffold01909	strand=-
+5490_gPutative uncharacterized protein
+>5491_g	length=423	scaffold=scaffold01912	strand=-
+5496_gAnkyrin, putative
+>5497_g	length=1527	scaffold=scaffold01915	strand=-
+5498_gHigh mobility group protein 4, putative 
+>5499_g	length=141	scaffold=scaffold01916	strand=-
+5500_gPutative uncharacterized protein
+>5501_g	length=1071	scaffold=scaffold01918	strand=-
+5502_gPutative uncharacterized protein
+>5503_g	length=1194	scaffold=scaffold01920	strand=-
+5506_gCytidine and deoxycytidylate deaminase 
+>5507_g	length=2310	scaffold=scaffold01923	strand=+
+5526_gUncharacterized protein
+>5527_g	length=378	scaffold=scaffold01938	strand=-
+5548_gPutative uncharacterized protein
+>5549_g	length=1773	scaffold=scaffold01956	strand=+
+5550_gPutative uncharacterized protein
+>5551_g	length=1277	scaffold=scaffold01958	strand=+
+5569_gG-protein coupled receptor, putative
+>5570_g	length=363	scaffold=scaffold01972	strand=+
+5571_g3-oxoacyl-(Acyl carrier protein) synthase 
+>5572_g	length=261	scaffold=scaffold01973	strand=+
+5576_gPutative uncharacterized protein
+>5577_g	length=276	scaffold=scaffold01977	strand=+
+5651_gPutative uncharacterized protein
+>5652_g	length=135	scaffold=scaffold02030	strand=+
+5656_gLMBR-like, integral membrane protein, 
+>5657_g	length=1843	scaffold=scaffold02034	strand=-
+5675_gDEAD/DEAH box helicase, putative
+>5676_g	length=943	scaffold=scaffold02050	strand=-
+5685_gPutative uncharacterized protein
+>5686_g	length=1364	scaffold=scaffold02058	strand=-
+5687_gSET-domain protein, putative (Fragment) 
+>5688_g	length=255	scaffold=scaffold02060	strand=+
+5712_gPutative uncharacterized protein
+>5713_g	length=363	scaffold=scaffold02076	strand=-
+5738_gConserved Plasmodium protein
+>5739_g	length=231	scaffold=scaffold02095	strand=-
+5776_gPutative uncharacterized protein
+>5777_g	length=498	scaffold=scaffold02121	strand=+
+5793_gABC transporter, (TAP family), putative 
+>5794_g	length=360	scaffold=scaffold02136	strand=+
+5912_gPutative uncharacterized protein
+>5913_g	length=183	scaffold=scaffold02230	strand=-
+5928_gP-type ATPase, putative
+>5929_g	length=555	scaffold=scaffold02239	strand=-
+5930_gPutative uncharacterized protein PY06929 
+>5931_g	length=1875	scaffold=scaffold02241	strand=-
+5932_gConserved Plasmodium protein
+>5933_g	length=216	scaffold=scaffold02242	strand=-
+5936_gPutative uncharacterized protein
