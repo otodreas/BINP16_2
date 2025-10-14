@@ -49,8 +49,26 @@ practice exercises
 # per type, or contains none if the string is empty
 # types: lower, upper, numbers, whitespace
 
-def char_counter(str):
+def char_counter(string):
     
     import re
     
-    char_types = ['\', '\', '\d', '\s']
+    type_found = False
+    char_types = {"lowercase": r"[a-z]",
+                  "uppercase": r"[A-Z]",
+                  "digits": "\d",
+                  "whitespaces": "\s"}
+    
+    for i, item in enumerate(char_types.items()):
+        
+        if re.search(item[1], string):
+            type_found = True
+            print(f"contains {item[0]}")
+        else:
+            pass
+        
+        if i == len(char_types)-1 and not type_found:
+            print("contains none of the required character types")
+
+#%% 6.2
+
