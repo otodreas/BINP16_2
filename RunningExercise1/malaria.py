@@ -114,6 +114,9 @@ IDs_fasta = []
 headers_fasta = []
 seqs_fasta = []
 
+dict_fasta = {}
+counter = 0
+
 # Open the FASTA file using with to ensure that it is closed after completion.
 with open(fasta_file, 'r') as fasta:
     
@@ -121,6 +124,7 @@ with open(fasta_file, 'r') as fasta:
     # that each line of the file is read into the variable line.
     while True:
         line = fasta.readline()
+        
         
         # Check that there is a line in the file for the current iteration of
         # the loop.
@@ -130,17 +134,22 @@ with open(fasta_file, 'r') as fasta:
             # list headers_fasta, replacing the final '\n' with '\t', since
             # more data will be added to the header in the output.
             if line.startswith('>'):
-                headers_fasta.append(line.replace('\n', '\t'))
+                header = line.replace('\n', '\t')
                 
                 # Split the characters in string line into a list, appending
                 # the characters of the first item follwing the leading '>' to
                 # the list IDs_fasta.
-                IDs_fasta.append(line.split()[0][1:])
+                # IDs_fasta.append(line.split()[0][1:])
                 
             # If the string line does not start with '>' it is a sequence.
             # Append the string to the list seqs_fasta.
             else:
-                seqs_fasta.append(line)
+                seq = line
+                
+            if counter %2 != 0:
+                dict_fasta[header] = seq
+                
+            counter = counter + 1
                 
         # Break the while loop when the end of the FASTA file is reached.
         else:
@@ -160,6 +169,7 @@ if len(headers_fasta) != len(seqs_fasta):
 # Create the empty list data_blast. This list will store all the data from 
 # blast_file in a list, where every line is a list nested within data_blast.
 data_blast = []
+dict_blast = {}
 
 # Open the BLAST data file using with to ensure that it is closed after
 # completion.
@@ -180,29 +190,21 @@ with open(blast_file, 'r') as blast:
             # description column using the column index. Append the row to the
             # list data_blast only if it does not.
             if 'null' not in row_split[desc_blast_col]:
-                data_blast.append(row_split)
+                
+                ID_blast = row[ID_blast_col]
+                desc_blast = row[desc_blast_col]
+                dict_blast[ID_blast] = (f'protein={desc_blast}\n')
+                
+                
+                
+                
         
         # Break the while loop when there are no more rows to be read.
         else:
             break
 
 
-# 3.3. Create a dictionary to store protein IDs and their corresponding strings
-# that will be added to the output file.
 
-# Create an empty dictionary to store protein IDs and their corresponding
-# descriptions based on the contents of blast_file
-custom_strings_dict = {}
-
-# Loop through the nested lists inside the list data_blast to access each BLAST
-# hit iteratively by row.
-for i, row in enumerate(data_blast):
-    
-    # Assign the protein ID and its description to variables ID_blast and
-    # desc_blast and add them to the dictionary custom_strings_dict.
-    ID_blast = data_blast[i][ID_blast_col]
-    desc_blast = data_blast[i][desc_blast_col]
-    custom_strings_dict[ID_blast] = (f'protein={desc_blast}\n')
 
 
 # -----------------------------------------------------------------------------
@@ -214,17 +216,17 @@ with open(output_path, 'w') as output:
     
     # Loop through the list of FASTA headers to which the custom strings will
     # be added to write the output.
-    for i, header_fasta in enumerate(headers_fasta):
+    for header in dict_fasta.keys():
         
         # Check if the current ID is in the list of keys in the dictionary
         # custom_strings_dict. If it is not, that protein IDs function was
         # listed as 'null' and will not be included in the output file.
-        if IDs_fasta[i] in custom_strings_dict.keys():
+        if header.split()[0][1:] in dict_blast.keys():
             
             # Construct the output file.
-            output.write(header_fasta
-                         + custom_strings_dict[IDs_fasta[i]]
-                         + seqs_fasta[i])
+            output.write(header
+                         + dict_blast[header.split()[0][1:]]
+                         + dict_fasta[header])
 
 # Print completion message.
 print(f'Output written to {output_path}')
